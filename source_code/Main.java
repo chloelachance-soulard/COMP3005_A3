@@ -34,6 +34,7 @@ public class Main {
         }
     }
 
+    //Retrieves and displays all records from the students table
     public static void getAllStudents() {
         try {
             //statement/query to retrieve all students from database
@@ -53,6 +54,7 @@ public class Main {
         }
     }
 
+    //Inserts a new student record into the students table
     public static void addStudent(String first_name, String last_name, String email, String enrollment_date) {
         //INSERT Operation
         String insertSQL = "INSERT INTO student(first_name, last_name, email, enrollment_date) VALUES (?,?,?,?)";
@@ -68,6 +70,7 @@ public class Main {
         }
     }
 
+    //Updates the email address for a student with the specified student_id
     public static void updateStudentEmail(int student_id, String new_email){
         //Update operation
         String updateSQL = "UPDATE student SET email = ? WHERE student_id = ?";
@@ -80,6 +83,7 @@ public class Main {
             int idFound = 0;
             //while loop to go through data set to try and find student id
             while (resultSet.next()) {
+                //if id is found, execute the update (update that student's email)
                 if(resultSet.getInt("student_id") == student_id){
                     pstmt.setString(1, new_email);
                     pstmt.setInt(2, student_id);
@@ -99,6 +103,7 @@ public class Main {
         }
     }
 
+    //Deletes the record of the student with the specified student_id
     public static void deleteStudent(int student_id){
         //delete operation
         String deleteSQL = "DELETE FROM student WHERE student_id = ?";
@@ -111,6 +116,7 @@ public class Main {
             int idFound = 0;
             //while loop to go through data set to try and find student id
             while (resultSet.next()) {
+                //if id is found, execute the update and the delete student
                 if(resultSet.getInt("student_id") == student_id){
                     pstmt.setInt(1, student_id);
                     pstmt.executeUpdate();
