@@ -9,7 +9,7 @@ Setup instructions:
 2. Open IntelliJ and create a new project
 3. Select maven and click next
 4. Name your project and create it.
-5. Open the pom.xml file and add the dependencies found in the pom.xml file found in the database_scripts folder (copy the contents of the pom.xml file found in the database_scripts folder and paste it under the properties in the pom.xml file in IntelliJ)
+5. Open the pom.xml file and add the dependencies found in the pom.xml dependencies file found in the database_scripts folder (copy the contents of the pom.xml dependencies file found in the database_scripts folder and paste it under the properties in the pom.xml file in IntelliJ)
 7. Load the maven changes (should have an m with a blue arrow symbol that shows up on page)
 9. In src->main, create a new java file (name it main.java)
 10. copy the code found in the main.java file found in the database_scripts folder and paste it into your java file in IntelliJ
