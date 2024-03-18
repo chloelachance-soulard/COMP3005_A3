@@ -5,7 +5,7 @@ Student ID: 101096672
 Video link: https://mediaspace.carleton.ca/media/COMP3005+A3P1+Chloe+Lachance-Soulard/1_ofbyesz0
 
 Setup instructions:
-1. In pgadmin 4, create a new database (right click on databases and select create datanamed A3 and create/populate the table using the A3P1.txt file found in the database_files folder)
+1. In pgadmin 4, create a new database (right click on databases and select create, name it A3 and create/populate the table using the A3P1.txt file found in the database_files folder (copy/paste contents of A3P1.txt into query tool))
 2. Open IntelliJ and create a new project
 3. Select maven and click next
 4. Name your project and create it.
