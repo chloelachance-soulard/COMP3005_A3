@@ -9,13 +9,13 @@ Setup instructions:
 2. Open IntelliJ and create a new project
 3. Select maven and click next
 4. Name your project and create it.
-5. Open the pom.xml file and add the dependencies found in the pom.xml dependencies file found in the database_scripts folder (copy the contents of the pom.xml dependencies file found in the database_scripts folder and paste it under the properties in the pom.xml file in IntelliJ)
+5. Open the pom.xml file and add the dependencies found in the pom.xml dependencies file found in the source_code folder (copy the contents of the pom.xml dependencies file found in the source_code folder and paste it under the properties in the pom.xml file in IntelliJ)
 7. Load the maven changes (should have an m with a blue arrow symbol that shows up on page)
-9. In src->main, create a new java file (name it main.java)
-10. copy the code found in the main.java file found in the database_scripts folder and paste it into your java file in IntelliJ
-11. You are now ready to run the application
-12. To see the edits made to the database in pgadmin 4, open the query tool in your A3 databse and copy/paste the query found in the test_query file in the database_files folder
-Note. Make sure you edit the main.java script lines to reflect the correct URL, username and password for your database 
+8. Right click the src->main->java folder in IntelliJ and create a new class called main.java
+9. Copy the code found in the main.java file found in the source_code folder and paste it into the class you created
+10. You are now ready to run the application
+11. To see the edits made to the database in pgadmin 4, open the query tool in your A3 databse and copy/paste the query found in the test_query file in the database_files folder
+Note. Make sure you edit the main.java script lines to reflect the correct URL, username and password for your database
 
 How to run application:
 1. In IntelliJ, run the script.
