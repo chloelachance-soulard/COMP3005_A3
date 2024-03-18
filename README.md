@@ -15,6 +15,7 @@ Setup instructions:
 8. In src->main, create a new java file (name it main.java)
 9. copy the code found in the main.java file found in the database_scripts folder and paste it into your java file in IntelliJ
 10. You are now ready to run the application
+11. To see the edits made to the database in pgadmin 4, open the query tool in your A3 databse and copy/paste the query found in the test_query file in the database_files folder
 Note. Make sure you edit the main.java script lines to reflect the correct URL, username and password for your database 
 
 How to run application:
